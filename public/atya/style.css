@@ -1,0 +1,322 @@
+
+
+
+* {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* --------------------------------------------------------- page1 ------------------------------------------------------- */
+
+
+.img-page1 {
+
+  /* The image used */
+  background-image: url("img/logo6.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* --------------------------------------------- */
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.book {
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+}
+
+.book img {
+  width: 100%;
+}
+
+.book-info {
+  padding: 10px;
+}
+
+.book-title {
+  color: rgb(12, 0, 79);
+  font-size: 15px;
+
+}
+
+.book-author {
+  font-size: 14px;
+  color: #888;
+}
+
+.book-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f60;
+}
+
+/* --------------------------------------------- */
+
+.page1-end {
+  float: left;
+  width: 100%;
+}
+
+.img-page1-end {
+  width: 65%;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+}
+
+/* --------------------------------------------------------- page2 ------------------------------------------------------- */
+
+
+.img-page2 {
+  /* The image used */
+  background-image: url("img/img-2/empe.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* --------------------------------------------- */
+.employee {
+  float: left;
+  width: 50%;
+}
+.employee-image {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------- */
+
+.page2-end {
+  float: left;
+  width: 100%;
+}
+
+.img-page2-end {
+  width: 50%;
+  height: 250px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+/* --------------------------------------------------------- page3 ------------------------------------------------------- */
+
+.img-page3 {
+  /* The image used */
+  background-image: url("img/img-2/contact4.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* --------------------------------------------- */
+
+.div-form {
+  justify-content: center;
+  display: inline-flex;
+}
+
+.label,
+input {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+input::placeholder{
+  font-size: larger;
+  font-weight: bold;
+}
+textarea::placeholder{
+  font-size: large;
+}
+
+.button-style {
+  font-size: 15px;
+  background-color: red;
+  border: red solid;
+  margin-left: 63%;
+  color: white;
+  border-radius: 0px;
+}
+
+/* --------------------------------------------- */
+
+address {
+  display: block;
+  padding-left: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.address {
+  display: block;
+  padding-left: 60px;
+  margin-top: 10px;
+  margin-bottom: -25px;
+}
+
+
+.link {
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+/* --------------------------------------------- */
+
+.FAQ {
+  text-align: center;
+  width: 628px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px rgb(140, 132, 132) solid;
+  border-spacing: 10ch;
+
+}
+
+
+
+/* --------------------------------------------------------- all ------------------------------------------------------- */
+/* 3 */
+
+nav {
+  width: auto;
+}
+
+ul {
+  margin-top: 23px;
+  position: absolute;
+  list-style: none;
+  right: 30px;
+  bottom: 30px;
+}
+
+nav li {
+  display: inline-block;
+  padding-left: 80px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: white;
+  transition-duration: 2s;
+}
+
+.nav_link,
+.current {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-size: 18px;
+}
+
+.nav_link::before,
+.current::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 350ms;
+
+}
+
+.current::before {
+  transform: scaleX(1);
+}
+
+.nav_link:hover::before {
+  transform: scaleX(1);
+}
+
+/* --------------------------------------------- */
+/* 3 */
+
+.Logo-img {
+  width: 40px;
+  float: left;
+
+  margin-left: 20px;
+  margin-top: 270px;
+}
+
+/* --------------------------------------------- */
+/* 3 */
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* --------------------------------------------- */
+/* 3 */
+
+.Logo {
+  width: 120px;
+  font-weight: 700;
+  font-size: 20px;
+  float: left;
+  color: white;
+
+  margin-left: 180px;
+  margin-top: 320px;
+}
+
+/* --------------------------------------------- */
+/* 3 */
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 300px;
+  margin-right: 300px;
+  height: 20px;
+}

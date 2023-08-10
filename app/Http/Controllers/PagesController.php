@@ -7,35 +7,53 @@ use Illuminate\Http\Request;
 class PagesController extends Controller {
 
 
-    function index() {
+    // function index() {
 
-        return 'index page';
-    }
+    //     return 'index page';
+    // }
 
-    function about() {
+    // function about() {
 
-        return 'about page';
-    }
+    //     return 'about page';
+    // }
 
-    function team() {
+    // function team() {
 
-        return 'team page';
-    }
+    //     return 'team page';
+    // }
 
-    function services() {
+    // function services() {
 
-        return 'services page';
-    }
+    //     return 'services page';
+    // }
 
-    function blog() {
+    // function blog() {
 
-        return 'blog page';
-    }
+    //     return 'blog page';
+    // }
 
-    function articles() {
+    // function articles() {
 
-        return 'articles page';
-    }
+    //     return 'articles page';
+    // }
+
+
+
+        function index () {
+
+            return view('index');
+        }
+
+        function about () {
+
+            return view('about');
+        }
+
+        function contact () {
+
+            return view('contact');
+        }
+
 
 
 

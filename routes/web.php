@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainController;
+//use App\Http\Controllers\MainController;
 use App\Http\Controllers\PagesController;
 //use App\Http\Controllers\ProductController;
 
@@ -118,13 +118,23 @@ use App\Http\Controllers\PagesController;
 
 // index , about , team , services , blog , articles
 
-Route::get('/',[PagesController::class, 'index'])->name('index');
-Route::get('/about',[PagesController::class, 'about'])->name('about');
-Route::get('/team',[PagesController::class, 'team'])->name('team');
-Route::get('/services',[PagesController::class, 'services'])->name('services');
-Route::get('/blog',[PagesController::class, 'blog'])->name('blog');
-Route::get('/articles',[PagesController::class, 'articles'])->name('articles');
+// Route::get('/',[PagesController::class, 'index'])->name('index');
+// Route::get('/about',[PagesController::class, 'about'])->name('about');
+// Route::get('/team',[PagesController::class, 'team'])->name('team');
+// Route::get('/services',[PagesController::class, 'services'])->name('services');
+// Route::get('/blog',[PagesController::class, 'blog'])->name('blog');
+// Route::get('/articles',[PagesController::class, 'articles'])->name('articles');
 
 //Route::resource('products', ProductController::class);
+
+
+
+
+Route::get('/',[PagesController::class, 'index'])->name('index');
+Route::get('/index',[PagesController::class, 'index'])->name('index');
+Route::get('/about',[PagesController::class, 'about'])->name('about');
+Route::get('/contact',[PagesController::class, 'contact'])->name('contact');
+Route::post('/contact',[PagesController::class, 'contact_data'])->name('contact_data');
+
 
 //
