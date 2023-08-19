@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Faker\Guesser\Name;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller {
@@ -54,6 +55,22 @@ class PagesController extends Controller {
             return view('contact');
         }
 
+        // ثلاثة طرق عن تمرير المتغيرات من ال كنترولر ل فييو
+
+        function user ($name,$age) {
+
+            return view('user.profile',[
+                    #1
+                'name' => $name,
+                'age' => $age
+            ],
+                    #2
+            compact('name','age'))
+            
+                    #3
+                -> with('name',$name)
+                -> with('age',$age);
+        }
 
 
 

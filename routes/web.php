@@ -136,5 +136,7 @@ Route::get ('/contact',[PagesController::class, 'contact'     ])->name('contact'
 Route::post('/contact',[PagesController::class, 'contact_data'])->name('contact_data');
 
 
+Route::get ('/user/{name}/{age}',      [PagesController::class, 'user'])->name('user');
+
 
 //
