@@ -129,12 +129,12 @@ use App\Http\Controllers\PagesController;
 
 
 
-
-Route::get('/',[PagesController::class, 'index'])->name('index');
-Route::get('/index',[PagesController::class, 'index'])->name('index');
-Route::get('/about',[PagesController::class, 'about'])->name('about');
-Route::get('/contact',[PagesController::class, 'contact'])->name('contact');
+Route::get ('/',       [PagesController::class, 'index'       ])->name('index'       );
+Route::get ('/index',  [PagesController::class, 'index'       ])->name('index'       );
+Route::get ('/about',  [PagesController::class, 'about'       ])->name('about'       );
+Route::get ('/contact',[PagesController::class, 'contact'     ])->name('contact'     );
 Route::post('/contact',[PagesController::class, 'contact_data'])->name('contact_data');
+
 
 
 //

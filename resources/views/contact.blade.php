@@ -70,7 +70,7 @@
 
             <div style="justify-content: center; margin-left:20%;">
                 <div class="div-form">
-                    <form action="mailto:aaaaaa@gmail.com">
+                    <form action="{{ route('contact_data') }} ">
 
                         <input style="width: 215px;" type="text" placeholder="Name" required class="input">
 

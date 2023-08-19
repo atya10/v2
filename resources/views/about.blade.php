@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Logo Store</title>
+    
     <link rel="shortcut icon" href="{{ asset('atya/img/img-2/emp.jpg') }}">
 
     <link rel="stylesheet" href="{{ asset('atya/style.css') }}">
